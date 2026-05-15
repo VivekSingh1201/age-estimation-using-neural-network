@@ -57,6 +57,10 @@ Age-Detection-ANN/
 ## Dataset
 The dataset contains facial images grouped into age categories.
 
+Train Dataset : https://infyspringboard.onwingspan.com/common-content-store/Shared/Shared/Public/lex_auth_012776431940165632236_shared/web-hosted/assets/agedetectiontrain.zip
+
+Test Dataset : https://infyspringboard.onwingspan.com/common-content-store/Shared/Shared/Public/lex_auth_012776431940165632236_shared/web-hosted/assets/agedetectiontest.zip
+
 ### Training Dataset
 Contains:
 - Image files
