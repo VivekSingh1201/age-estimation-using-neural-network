@@ -113,7 +113,7 @@ bash pip install tensorflow numpy pandas matplotlib pillow imageio scikit-learn 
 
 ## Model Architecture
 The ANN architecture used:
-
+'''text
 Input Image (32x32x3)
         ↓
 Flatten Layer
@@ -123,7 +123,7 @@ Dense Layer (500 neurons, ReLU)
 Dropout / Regularization (optional experiments)
         ↓
 Output Layer (Softmax)
-
+'''
 ---
 
 ## Training
