@@ -93,14 +93,19 @@ Contains:
 ## Installation
 
 ### Clone Repository
-bash git clone https://github.com/your-username/age-detection-ann.git cd age-detection-ann 
+```text
+bash git clone https://github.com/your-username/age-detection-ann.git cd age-detection-ann
+```
 
 ### Create Virtual Environment
+```text
 bash python -m venv DLenv source DLenv/bin/activate 
+```
 
 For Windows:
+```text
 bash DLenv\Scripts\activate 
-
+```
 ---
 
 ### Install Dependencies
