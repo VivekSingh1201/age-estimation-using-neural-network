@@ -31,6 +31,8 @@ This project serves as both an implementation of image classification using ANN 
 ---
 
 ## Project Structure
+
+```text
 Age-Detection-ANN/
 │
 ├── age_detection_train/
@@ -51,15 +53,13 @@ Age-Detection-ANN/
 ├── notebook.ipynb
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
 ## Dataset
 The dataset contains facial images grouped into age categories.
-
-Train Dataset : https://infyspringboard.onwingspan.com/common-content-store/Shared/Shared/Public/lex_auth_012776431940165632236_shared/web-hosted/assets/agedetectiontrain.zip
-
-Test Dataset : https://infyspringboard.onwingspan.com/common-content-store/Shared/Shared/Public/lex_auth_012776431940165632236_shared/web-hosted/assets/agedetectiontest.zip
+Dataset Source: Infosys Springboard
 
 ### Training Dataset
 Contains:
