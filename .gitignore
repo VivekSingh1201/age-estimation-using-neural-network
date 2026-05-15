@@ -1,0 +1,29 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+DLenv*/
+.venv/
+venv/
+env/
+
+# Local datasets
+age_detection_train/
+age_detection_test/
+
+# Model/checkpoint outputs
+*.h5
+*.keras
+optimum_model/
+
+# Experiment logs
+activation/
+biases/
+dropout/
+early_stop/
+learning_rate/
+optims/
+regularization/
+runs/
+logs/
