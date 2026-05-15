@@ -109,11 +109,12 @@ bash DLenv\Scripts\activate
 ---
 
 ### Install Dependencies
+```text
 bash pip install -r requirements.txt 
 
 Or manually:
 bash pip install tensorflow numpy pandas matplotlib pillow imageio scikit-learn tensorboard 
-
+```
 ---
 
 ## Model Architecture
@@ -134,8 +135,9 @@ Output Layer (Softmax)
 
 ## Training
 Train the model:
+```text
 python model.fit(train_x,train_y,batch_size=32,epochs=50,     validation_split=0.2 ) 
-
+```
 ---
 
 ## Hyperparameter Experiments
@@ -182,7 +184,9 @@ Launch TensorBoard:
 bash tensorboard --logdir=. 
 
 Open browser:
-bash http://localhost:6006 
+```text
+bash http://localhost:6006
+```
 
 Track:
 - Accuracy
@@ -194,31 +198,42 @@ Track:
 ---
 
 ## Saving the Model
+```text
 python model.save('optimum_model.keras') 
-
+```
 ---
 
 ## Loading the Model
+```text
 python from tensorflow.keras.models import load_model  model = load_model('optimum_model.keras', compile=False) 
-
+```
 ---
 
 ## Making Predictions
+```text
 python pred = model.predict(test_x) pred = np.argmax(pred, axis=1) pred = lb.inverse_transform(pred) 
-
+```
 ---
 
 ## Export Predictions
+```text
 python test['Class'] = pred test.to_csv('out.csv', index=False) 
+```
 
 Output format:
+```text
 csv ID,Class img1.jpg,Young img2.jpg,Middle img3.jpg,Old 
-
+```
 ---
 
 ## Visual Prediction Example
-python idx = 2481 single_image = np.expand_dims(test_x[idx], axis=0)  pred = model.predict(single_image) pred_class = np.argmax(pred, axis=1) pred_label = lb.inverse_transform(pred_class)[0] 
-
+```text
+python idx = 2481
+single_image = np.expand_dims(test_x[idx], axis=0)
+pred = model.predict(single_image)
+pred_class = np.argmax(pred, axis=1)
+pred_label = lb.inverse_transform(pred_class)[0] 
+```
 ---
 
 ## Learning Outcomes
